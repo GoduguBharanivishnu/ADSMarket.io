@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disposable Marketing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #ff6600;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 1.8em;
+    }
+    .logo{
+      display: inline-block;
+      vertical-align: top;
+      width: 60px;
+      height:65px;
+      margin-right: 20px;
+
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-size:1.5 em;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(255, 102, 0, 0.8), rgba(255, 102, 0, 0.8)), url('https://images.unsplash.com/photo-1532634989-539c3fefb076') no-repeat center center/cover;
+      color: white;
+    }
+    header h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      animation: fadeIn 2s ease-out;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      animation: fadeInUp 2s ease-out;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: fill;
+      border-radius: 2px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .cta {
+      background-color: #ffd6a0;
+      text-align: center;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .cta button {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta button:hover {
+      background-color: #ff4500;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+  
+    
+    <img class="logo" src="logo.jpg">
+    <h1>Disposable Marketing</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>Turning Every Sip into a Marketing Opportunity</h2>
+    <p>Advertise on disposable tea, coffee, and juice cups and reach your audience directly.</p>
+  </header>
+  <section class="section" id="about">
+    <h2>About Us</h2><Br>
+      <p>We are a startup named <B>Disposable Marketing</b>. Our company is aimed at printing <B>advertisements</B> on <b>disposable tea, juice, </b>and other <b>cups</b>. We accept all kinds of advertisements — including educational institute promotions, restaurant ads, political campaigns, events, and movie promotions.</p>
+    <p>We don’t just print and sit. We actively distribute these printed cups to various shops and places where the advertisement will have the most impact. From student areas and business hubs to political rally spots and entertainment venues, our aim is to reach the right audience at the right time — with the cup in their hand.</p>
+  </section>
+  <section class="section" id="services">
+    <h2>Our Services</h2><BR>
+    <div class="grid">
+      <div class="card">
+        <h3>Educational Institutes</h3>
+        <p>We design and print advertisements for coaching centers, schools, and colleges, and distribute them near student hubs, libraries, and academic zones.</p>
+      </div>
+      <div class="card">
+        <h3>Restaurants & Cafes</h3>
+        <p>We help restaurants and cafes attract more customers by printing their menus, offers, or new dish announcements on disposable cups.</p>
+      </div>
+      <div class="card">
+        <h3>Political Campaigns</h3>
+        <p>We provide campaign branding solutions by printing slogans, symbols, and messages of political parties and distributing them during rallies and meetings.</p>
+      </div>
+      <div class="card">
+        <h3>Events & Exhibitions</h3>
+        <p>Whether it’s a cultural fest, job fair, or music concert, we ensure your event gets visibility through cup advertising at strategic locations.</p>
+      </div>
+      <div class="card">
+        <h3>Movie Promotions</h3>
+        <p>We print posters, release dates, and QR codes of upcoming movies on juice and tea cups and distribute them at places with high foot traffic.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Campaigns</h3>
+        <p>Have a unique promotion idea? We offer customizable cup advertising solutions for any business, organization, or cause with targeted distribution strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <h2>Gallery</h2><br>
+    <div class="grid">
+      <img src="image1.jpg" alt="Cup Ad 1">
+      <img src="image5.jpg" alt="Cup Ad 2">
+      <img src="image4.jpg" alt="Cup Ad 3">
+      <img src="image2.jpg" alt="Cup Ad 3">
+    </div>
+  </section>
+
+  <section class="section cta">
+    <h2>Advertise Now!</h2>
+    <p>Get your brand noticed by thousands. Contact us for custom packages and rates.</p>
+    <button onclick="alert('We will contact you shortly. Thank you!')">Get in Touch</button>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2><BR>
+    <p>Email: <strong>info@disposablemarketing.com</strong></p>
+    <p>Phone: <strong>+91-7702066290</strong></p>
+    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Disposable Marketing. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
